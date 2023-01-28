@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-board {
+    background-color: lightgray;
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: #19BDFF;
+    border: .25vmin solid black;
+    border-radius: 5px;
+}
+
+.food {
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 12.5px;
+}
+
+.food-gold {
+    background-color: gold;
+    border: .25vmin solid black;
+    border-radius: 12.5px;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-custom-width {
+    width: 80vmin;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-between !important;
+    margin-left: -.5vmin;
+}
+
+button {
+    padding-left: 1.5vmin;
+    padding-right: 1.5vmin;
+    border-radius: 4px !important;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+.my-name {
+    display: flex;
+    justify-content: end;
+    margin-top: 5.5vmin;
+    margin-right: 1vmin;
+}
+
+.my-switch {
+    border-radius: 7.5px !important;
+    /* padding: 5px !important; */
+    /* margin-top: .75vmin !important; */
+}
+
+.my-custom {
+    padding-right: 5px !important;
+    height: 2.75vmin;
+    margin-top: .25vmin;
+    border: 2px solid gold !important;
+    background-color: gold !important;
+    font-weight: 600;
+}
