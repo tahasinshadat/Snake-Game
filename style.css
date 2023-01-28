@@ -137,4 +137,9 @@ button:hover {
         display: block;
     }
 
+    #game-board {
+        width: 92.5vmin;
+        height: 92.5vmin;
+    }
+
 }
