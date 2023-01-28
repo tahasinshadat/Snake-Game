@@ -83,3 +83,58 @@ button:hover {
     background-color: gold !important;
     font-weight: 600;
 }
+
+#mobile {
+    display: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+#mobile button{
+    font-size: 25px;
+    padding-left: 3.75vmin;
+    padding-right: 3.75vmin;
+    color: white !important;
+    background-color: rgba(148, 148, 148, 0.5) !important;
+    box-shadow: none !important;;
+}
+
+#right {
+    padding-left: 2vmin !important;
+    padding-right: 2vmin !important;
+}
+
+#left {
+    padding-left: 2vmin !important;
+    padding-right: 2vmin !important;
+}
+
+#O {
+    padding-left: 3vmin !important;
+    padding-right: 3vmin !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 768px) {
+    .my-custom-width {
+        display: block !important;
+    }
+    
+    .my-custom {
+        width: 150px;
+        margin: auto !important;
+        margin-top: 7px !important;
+        margin-bottom: 3px !important;
+    }
+    
+    .my-name {
+        justify-content: center;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+}

@@ -41,7 +41,49 @@ window.addEventListener('keydown', e => {
     }
 });
 
+
+
 export function getInputDirection() {
     lastInputDirection = inputDirection;
     return inputDirection
+}
+
+
+// Buttons
+let upBtn = document.getElementById('up');
+let leftBtn = document.getElementById('left');
+let rightBtn = document.getElementById('right');
+let downBtn = document.getElementById('down');
+
+// Movement for mobile players
+upBtn.onclick = () => {
+    if (lastInputDirection.y !== 0) { 
+        return
+    }
+    inputDirection = { x: 0, y: -1 };
+    return
+}
+
+leftBtn.onclick = () => {
+    if (lastInputDirection.x !== 0) { 
+        return
+    }
+    inputDirection = { x: -1, y: 0 };
+    return
+}
+
+rightBtn.onclick = () => {
+    if (lastInputDirection.x !== 0) { 
+        return
+    }
+    inputDirection = { x: 1, y: 0 };
+    return
+}
+
+downBtn.onclick = () => {
+    if (lastInputDirection.y !== 0) { 
+        return
+    }
+    inputDirection = { x: 0, y: 1 };
+    return
 }
